@@ -1,0 +1,21 @@
+.container {
+  border: 1px solid #a5acbd;
+  border-radius: 5px;
+  padding: 5px;
+  color: #a5acbd;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkedContainer {
+  border-color: white;
+  color: white;
+}

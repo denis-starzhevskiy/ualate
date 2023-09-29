@@ -1,0 +1,110 @@
+@mixin text {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin button {
+  border: 1px solid var(--color-dark);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.section {
+  min-height: 800px;
+  padding: 0 0 20px 0;
+  @media (max-width: 991.98px) {
+    overflow: hidden;
+  }
+}
+
+.title {
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.subTitle {
+  @include text;
+  @media (max-width: 991.98px) {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 30px;
+  margin: 20px 0 40px 0
+}
+
+.tabButton {
+  @include button;
+}
+
+.userDataText {
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #96989D;
+
+  @media (max-width: 900px) {
+    font-size: 25px;
+  }
+}
+
+.dateExistsStatsContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 30px 0;
+}
+
+.shortStatsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  margin: 30px 0
+}
+
+.balanceStatsContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 30px 0;
+}
+
+.actionsContainer {
+  display: flex;
+  column-gap: 50px;
+}
+
+.detailedInformationBtn {
+  @include button;
+  margin: 30px 0;
+}
+
+.divider {
+  width: 250px;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}

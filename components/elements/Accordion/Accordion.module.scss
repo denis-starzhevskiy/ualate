@@ -1,0 +1,15 @@
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--font-color);
+  .accordionTitleIcon {
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.accordionContent {
+  padding-top: 22px;
+}

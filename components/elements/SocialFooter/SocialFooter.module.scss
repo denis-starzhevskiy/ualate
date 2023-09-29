@@ -1,0 +1,33 @@
+.list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9375rem 3.75rem;
+
+    li {
+      a {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          svg {
+            fill: var(--color-blue);
+          }
+        }
+
+        svg {
+          transition: 0.3s;
+
+          width: 100%;
+          height: 100%;
+          fill: var(--color-white);
+        }
+      }
+    }
+  }
+}

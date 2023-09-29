@@ -1,0 +1,51 @@
+.modalContainer {
+  background: #282d3b;
+  border-radius: 5px;
+  padding: 30px 95px;
+  width: 539px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.orDividerContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submitBtnContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin: 10px 0px;
+  justify-content: center;
+}
+
+.forgetPasswordText {
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: var(--color-light_grey);
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}

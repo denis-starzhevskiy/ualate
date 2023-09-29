@@ -1,0 +1,24 @@
+.buttonsList {
+  button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 13px 20px;
+    text-align: left;
+    color: white;
+    position: relative;
+    &.active {
+      background: #282d3b;
+      &:after {
+        content: '';
+        position: absolute;
+        background: #00eafd;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        left: calc(100% - 20px);
+        top: 50%;
+        transform: translate(-100%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+.table {
+  margin-bottom: 52px;
+  border-collapse: collapse;
+
+  row-gap: 20px;
+  width: 80%;
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
+
+  tr {
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 400px) {
+      width: 99%;
+    }
+  }
+}
+
+.th {
+  color: white;
+  font-weight: 400;
+  text-align: left;
+
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+.td {
+  color: var(--font-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  row-gap: 5px;
+  flex-direction: column;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    width: calc(100% - 2.5rem);
+  }
+  .textarea {
+    border: 1px solid var(--font-color);
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
+
+.commonTdTh {
+  color: var(--font-color);
+  padding: 20px 0;
+  @media (max-width: 600px) {
+    padding: 5px 0;
+    width: 100%;
+  }
+}
+
+.bottomBorder {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-light_grey);
+}
+
+.verticalAlign {
+  vertical-align: top;
+}
+
+.tagsList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 500px;
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
+}
+
+.tagsContainer {
+  width: 80%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.tag {
+  border: 1px solid #a5acbd;
+  border-radius: 5px;
+  padding: 5px;
+  color: #a5acbd;
+  font-size: 14px;
+}
+
+.outlinedButton {
+  background: #282d3b;
+  border: 1px solid #282d3b;
+}
+
+.checkBoxesContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  @media (max-width: 600px) {
+    padding: 5px 0;
+    width: 100%;
+    row-gap: 10px;
+  }
+}
+
+.actionContainer {
+  width: 80%;
+  display: flex;
+  column-gap: 30px;
+  @media (max-width: 991.98px) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  align-items: center;
+
+  input {
+    display: none;
+  }
+
+  img {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+}
+
+.labelSaveImg {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.uploadFileText {
+  background-color: #282d3b;
+  border-color: #282d3b;
+  color: var(--color-white);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.uploadedFileText {
+  background-color: #363a49;
+  border-color: #282d3b;
+  color: var(--font-color);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.customSelect {
+  width: 80%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: var(--font-color);
+}
+
+.customInput:not([type='checkbox']) {
+  width: 80%;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.errorLabel {
+  color: red;
+  font-size: 14px
+}

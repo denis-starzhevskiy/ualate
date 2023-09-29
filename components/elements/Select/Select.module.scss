@@ -1,0 +1,33 @@
+.selectContainer {
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  cursor: pointer;
+}
+.selectPopover {
+  padding: 5px 5px;
+  background: #282d3b;
+  border-radius: 5px;
+  & > li {
+    color: var(--color-white);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    &:hover {
+      background-color: var(--color-dark);
+    }
+    &.activeOption {
+      color: var(--color-blue);
+    }
+  }
+}
+
+.valueText {
+  flex-grow: 1;
+  color: var(--font-color);
+  font-size: 14px;
+}

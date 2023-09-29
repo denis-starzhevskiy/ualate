@@ -1,0 +1,22 @@
+.navigation {
+  nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 0.9375rem;
+      li {
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        color: var(--font-color);
+        width: calc(100% / 2 - (0.9375rem / 2));
+
+        a {
+          &:hover {
+            color: var(--color-yellow);
+          }
+        }
+      }
+    }
+  }
+}

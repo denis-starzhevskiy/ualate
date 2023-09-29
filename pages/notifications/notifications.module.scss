@@ -1,0 +1,99 @@
+.notification {
+  background: #282d3b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 30px;
+  gap: 15px;
+  margin-bottom: 20px;
+  .title {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .content {
+    color: var(--color-white);
+    font-size: 14px;
+  }
+  .deleteButton {
+    color: var(--color-light_grey);
+    text-decoration-line: underline;
+    font-size: 14px;
+    &:hover {
+      color: #b44545;
+    }
+  }
+}
+
+.sortContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  @media (max-width: 900px) {
+    margin: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.container {
+  margin-bottom: 90px;
+}
+
+.saveButton {
+  margin-top: 60px;
+}
+
+.modal {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0, 0);
+}
+
+.modalContainer {
+  background-color: var(--color-main);
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.desktopFiltersContainer {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.mobileFiltersButton {
+  @media (min-width: 900px) {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.sortSelect {
+  width: 160px;
+}

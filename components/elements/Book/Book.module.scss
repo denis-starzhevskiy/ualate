@@ -1,0 +1,64 @@
+.book {
+  box-sizing: border-box;
+  padding: 0 1.0938rem;
+
+  position: relative;
+
+  .status {
+    position: absolute;
+    z-index: 2;
+
+    left: 0;
+
+    top: 2.75rem;
+
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    background: #667d94;
+    border-radius: 0.3125rem;
+
+    padding: 0.625rem;
+  }
+
+  .image {
+    filter: drop-shadow(-0.625rem 0.1875rem 1.25rem rgba(0, 0, 0, 0.8));
+    border-radius: 0rem 1.25rem 1.25rem 0rem;
+
+    overflow: hidden;
+
+    object-fit: cover;
+  }
+
+  .iresponsive {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    padding: 0rem 0rem 145% 0rem;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+
+  .body {
+    margin-top: 1.875rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}

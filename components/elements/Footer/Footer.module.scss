@@ -1,0 +1,131 @@
+.footer {
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-dark);
+    height: 0.0625rem;
+    width: calc(100% - 6.25rem * 2);
+
+    @media (max-width: 1199.98px) {
+      width: 100%;
+      left: 0;
+      transform: none;
+    }
+  }
+  position: relative;
+
+  .wrapper {
+    padding: 2.5rem 0;
+
+    @media (max-width: 991.98px) {
+      padding: 1.875rem 0;
+    }
+  }
+
+  .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1.25rem;
+
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      gap: 1.875rem;
+    }
+  }
+
+  .column {
+    @media (max-width: 991.98px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.navigation {
+  max-width: 32.625rem;
+  width: 100%;
+
+  @media (max-width: 991.98px) {
+    max-width: 100%;
+  }
+}
+
+.copyright {
+  background: var(--color-backgroud);
+  border-top: 1px solid var(--font-color);
+
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: var(--color-dark);
+
+  gap: 0rem 1.25rem;
+
+  padding: 1.1875rem 1.25rem;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+
+    padding: 0.625rem 0.9375rem;
+  }
+}
+
+.social {
+  margin-bottom: 4.5rem;
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.dev {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.5625rem;
+
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+
+  transition: 0.3s;
+
+  color: var(--color-dark);
+
+  svg {
+    height: 1.1875rem;
+    width: 1.375rem;
+
+    transition: 0.3s;
+
+    fill: var(--color-dark);
+  }
+
+  &:hover {
+    color: var(--color-white);
+
+    svg {
+      fill: var(--color-white);
+    }
+  }
+}
+
+.logo {
+  @media (max-width: 991.98px) {
+    width: 10rem;
+    height: 10rem;
+  }
+}

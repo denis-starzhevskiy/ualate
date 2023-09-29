@@ -1,0 +1,22 @@
+.optionContainer {
+  border: 1px solid var(--color-white);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-light_grey);
+}
+
+.checkedColor {
+  color: var(--color-blue);
+}

@@ -1,0 +1,121 @@
+.table {
+  margin-bottom: 52px;
+  border-collapse: collapse;
+
+  row-gap: 20px;
+  width: 80%;
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
+
+  tr {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-light_grey);
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    @media (max-width: 400px) {
+      width: 80%;
+    }
+  }
+
+}
+
+.th {
+  color: var(--font-color);
+  font-weight: 400;
+  text-align: left;
+  width: 400px;
+
+  @media(max-width: 991.98px){
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.td {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 30px;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    width: calc(100% - 2.5rem);
+    column-gap: 20px;
+  }
+}
+
+.commonTdTh {
+  padding: 20px 0;
+}
+
+.bottomBorder {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-light_grey);
+}
+
+.verticalAlign {
+  vertical-align: top;
+}
+
+.input:not([type=checkbox]) {
+  width: 50%;
+  border: 1px solid var(--font-color);
+  color: var(--font-color)
+}
+
+.smallInput:not([type=checkbox]) {
+  width: 25%;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+
+  @media(max-width: 991.98px) {
+    width: 100px;
+  }
+}
+
+.coinsLabel {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--font-color);
+}
+
+.borderBottomNone {
+  border-bottom: none;
+}
+
+.abonementContainer {
+  display: flex;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+.inputLabelContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.errorLabel {
+  color: red;
+  font-size: 14px
+}

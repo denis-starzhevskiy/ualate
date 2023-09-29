@@ -1,0 +1,35 @@
+:root, root.dark{
+  --max-width: 71.875rem;
+  --font-inter: 'Inter', sans-serif, monospace;
+
+  --font-color: #fff;
+  --font-hover-color: #fff;
+  --border-color-hover: rgba(255, 255, 255, 0);
+  --border-color:  #1a1e29;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-main: #1a1e29;
+  --color-dark: #5e626c;
+  --color-blue: #00eafd;
+  --color-light_grey: #a5acbd;
+  --color-yellow: #fded01;
+  --color-backgroud: #1a1e29;
+}
+
+:root.light{
+  --max-width: 71.875rem;
+  --font-inter: 'Inter', sans-serif, monospace;
+  --border-color-hover: #fff;
+  --border-color: #fff;
+  --font-color: #1a1e29;
+  --font-hover-color: #fff;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-main: #fff;
+  --color-dark: #5e626c;
+  --color-blue: #00eafd;
+  --color-light_grey: #a5acbd;
+  --color-yellow: #fded01;
+  --color-backgroud: #fff;
+}
+

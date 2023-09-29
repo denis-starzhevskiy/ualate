@@ -1,0 +1,74 @@
+.section {
+  margin-bottom: 50px;
+  @media (max-width: 991.98px) {
+    overflow: hidden;
+  }
+}
+
+.title {
+  padding-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid var(--color-dark);
+}
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-bottom: 0.0625rem solid var(--color-dark);
+  @media (max-width: 900px) {
+    grid-template-columns: 2fr 9fr;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.usernameTextDecoration {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  font-style: normal;
+  color: #ffffff;
+}
+
+.commentTextDecoration {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.greyTextDecoration {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-light_grey);
+  cursor: pointer;
+}
+
+.replyInput::placeholder {
+  color: var(--color-light_grey);
+}
+
+.textItalic {
+  font-style: italic;
+}
+
+.likeActionContainer {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.usernameLastSeenContainer {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}

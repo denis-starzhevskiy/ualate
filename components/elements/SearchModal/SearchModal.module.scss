@@ -1,0 +1,74 @@
+.modalContainer {
+  background: #282d3b;
+  border-radius: 5px;
+  padding: 30px 95px;
+  width: 539px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid var(--font-color);
+  border-radius: 10px;
+  transition: 0.5s;
+
+  &:hover {
+  background-color: #383c48;
+}
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.orDividerContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  width: 250px;
+  margin-top: 30px;
+}
+
+.loadingSubmitBtn {
+  &:hover {}
+}

@@ -1,0 +1,90 @@
+@mixin text {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--font-color)
+}
+
+.title {
+  color: var(--font-color)
+}
+
+.section {
+  padding: 0 0 20px 0;
+  @media (max-width: 991.98px) {
+    overflow: hidden;
+  }
+}
+
+.settingsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  row-gap: 30px;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sectionTitle {
+  @include text;
+  color: #A5ACBD;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.checkBoxOptionsContainer {
+  padding: 30px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  row-gap: 20px;
+  width: 80%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.adaptiveInout {
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.submitButton {
+  width: 129px;
+  height: 44px;
+  margin-top: 20px;
+}
+
+.subSectionText {
+ @include text;
+  margin: 20px 0;
+  @media (max-width: 900px) {
+    text-align: center;
+  }
+}
+
+.sliderContainer {
+  @media(max-width: 900px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.colorPickersContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,87 @@
+.section {
+  min-height: 800px;
+  padding: 0 0 20px 0;
+  @media (max-width: 991.98px) {
+    overflow: hidden;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+}
+
+.rowGaps {
+  margin: 50px 0;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.table {
+  width: 925px;
+  border-collapse: collapse;
+  @media (max-width: 925px) {
+    width: 100%;
+  }
+  tr:first-child {
+    & > th {
+      padding: 12px 0 12px;
+    }
+    & > th:first-child {
+      border-right: 1px solid var(--color-dark);
+      border-bottom: 1px solid var(--color-dark);
+      width: 125px;
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  th {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  tr:nth-child(2) > th:first-child {
+    border-right: 1px solid var(--color-dark);
+    text-align: left;
+    padding: 0;
+    padding-top: 20px;
+    padding-right: 67px;
+    width: 125px;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  td {
+    padding: 0;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid var(--color-dark);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #96989d;
+    @media (max-width: 900px) {
+      font-size: 24px;
+    }
+    @media (max-width: 600px) {
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+}

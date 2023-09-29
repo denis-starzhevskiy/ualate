@@ -1,0 +1,67 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  appearance: none;
+  cursor: pointer;
+
+  border: 0.0625rem solid var(--color-dark);
+  border-radius: 0.3125rem;
+
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: calc(17 / 14);
+
+  color: var(--font-color);
+
+  padding: 0.5625rem 0.875rem;
+
+  min-height: 2.75rem;
+
+  gap: 0.625rem;
+
+  transition: 0.3s;
+
+  &:hover {
+    background: #282d3b;
+    border-color: #282d3b;
+    color: var(--font-hover-color);
+
+    .icon {
+      svg {
+        fill: var(--font-hover-color)
+      }
+    }
+  }
+  &:active {
+    transform: translateY(-0.125rem);
+  }
+
+  .icon {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--font-color);
+    }
+  }
+
+  &.white {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: #1a1e29;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-white);
+    }
+  }
+}

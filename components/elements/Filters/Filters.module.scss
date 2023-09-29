@@ -1,0 +1,60 @@
+.filtersTitle {
+  color: #a5acbd;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 35px;
+}
+
+.numberInput.numberInput {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #5e626c;
+  margin-left: 15px;
+}
+
+.numberInputsContainer {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-color)
+}
+
+.my20 {
+  margin: 20px 0;
+}
+
+.scrollContainer {
+  max-height: 205px;
+  overflow-y: auto;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #5e626c;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #00eafd;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #00eafd;
+  }
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

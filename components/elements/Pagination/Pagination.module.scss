@@ -1,0 +1,30 @@
+.paginationContainer {
+  display: flex;
+  column-gap: 10px;
+  margin: 75px 0;
+}
+
+.paginationItem {
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.8s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-blue);
+    color: var(--color-main);
+    border: 1px solid var(--color-blue);
+  }
+}
+
+.activePaginationItem {
+  background-color: var(--color-blue);
+  color: var(--color-main);
+  border: none;
+}
